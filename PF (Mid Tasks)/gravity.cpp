@@ -1,5 +1,6 @@
 #include <iostream>
-#include <windows.h>
+#include <unistd.h>
+//#include <windows.h>
 using namespace std;
 
 char arr[3][5] =
@@ -11,15 +12,16 @@ char arr[3][5] =
 void gravityFunction();
 void wormhole();
 
-main()
+int main()
 {
     // gravityFunction();
     while (true)
     {
-        system("cls");
+        system("clear");
         wormhole();
-        Sleep(1000);
+        sleep(1000);
     }
+    return 0;
 }
 
 void wormhole()
